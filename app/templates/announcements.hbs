@@ -1,0 +1,10 @@
+<h1>Announcements:</h1>
+
+<ul>
+  {{#each model as |announcement|}}
+    {{announcement-tile announcement=announcement destroyAnnouncement="destroyAnnouncement"}}
+  {{/each}}
+</ul>
+
+{{new-announcement saveAnnouncement2="saveAnnouncement3"}}
+{{#link-to 'index'}}Return home.{{/link-to}}
